@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: "Crash";
+}
+
+h3,h4,h5{
+    margin: 0px;
+    padding: 0px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    padding: 0px 5vw 0px 5vw;
+    height: 9vh;
+    background-color: rgb(0, 136, 255);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0);
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+nav img{
+    max-height: 7vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+nav a{
+    color: white;
+    font-size: 30px;
+    transition-duration: 150ms;
+}
+
+nav a:hover{
+    transform: skew(-.33rad);
+    text-shadow: 2px 2px black;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-section{
+    background: url("./img/wall1.jpg") no-repeat;
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-color: rgb(0, 136, 255, 0.8);
+    height: 100vh;
+}
+
+.hero-section img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Mario";
+    font-size: 2.5vw;
+    text-shadow: 10px 10px #000000;
+    letter-spacing: 5px; 
+    max-width: 600px;
+}
+
+audio{
+    margin-top: 15vh;
+}
+
+#rate1{
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: rotate(30deg);
+}
+
+#rate2{
+    position: relative;
+    top: 25%;
+    left: 10%;
+    transform: rotate(-30deg);
+}
+
+#rate3{
+    position: relative;
+    top: 70%;
+    left: 0%;
+    transform: rotate(-10deg);
+}
+
+.gallery h1{
+    font-size: 42px;
+}
+
+.gallery{
+    text-align: center;
+}
+
+.titles-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.titles-container img{
+    max-width: 500px;
+    box-shadow: 2px 2px 8px black;
+    transition-duration: 150ms;
+}
+
+.titles-container img:hover{
+    transform: skew(.1rad);
+}
+
+.game-if{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-ctrl{
+    font-size: 26px;
+}
+
+.join-form{
+    background: url("./img/wallpaper.png") no-repeat;
+    height: 100vh;
+}
+
+.form-card{
+    font-size: 42px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    min-height: 450px;
+    min-width: 25vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
+    text-align: left;
+    transition-duration: 150ms;
+}
+
+.form-card input[type="submit"]{
+    font-family: "Crash";
+    font-size: 24px;
+    max-width: 50%;
+    padding: 10px;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 200ms;
+}
+
+.form-card input[type="submit"]:hover{
+    background-color: rgba(0, 47, 255, 0.8);
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.characters-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.character-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgb(200, 200, 200);
+    padding: 20px;
+}
+
+.character-card img{
+    height: 250px;
+    justify-self: center;
+}
+
+.char-text p{
+    color:black;
+    font-size: 20px;
+}
+
+.char-h1{
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 35px;
+    color:rgb(255, 123, 0);
+}
+
+
+.art{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 20vh;
+}
+
+.art-container{
+    width: 550px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(255, 123, 0);
+    padding: 20px;
+    align-self: top;
+    justify-self: center;
+}
+
+.art-container img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0);
+}
+
+.art-container img{
+    width: 510px;
+    transition-duration: 200ms;
+}
+
+.about-section{
+    padding: 50px;
+}
+
+.about-section p{
+    font-size: 24px;
+}
+
+.about-section h1{
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: "Crash";
+    src: url(./fonts/Crash\ Bandicoot\ Wumpa.ttf);
+}
